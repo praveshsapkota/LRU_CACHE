@@ -14,62 +14,46 @@ had issue with docker compose file for running go backend so pls follow the belo
     key : number
 }
 
-# ------------------------------------------------------------------------
-
 step1 : **cd LRU_CACHE**
 
-## Run Backend start
+## Run Backend
 
 step 2 : **cd lru_cache_backend**
 
 ### run Build exe
 
-step 3 : **.\lru_Cache.exe**
-
-### end exe
+step 1 : **.\lru_Cache.exe**
 
 ### run in local server
 
-step 4 : **go mod download**
-step 5 : **go mod tidy**
-step 6 : **go run main.go**
-
-### run in local server
+step 1 : **go mod download**\
+step 2 : **go mod tidy**\
+step 3 : **go run main.go**\
 
 ### Run in docker
 
-step 7 : **docker build -t lru_cache_backend .**
-step 8 :  **docker run --pid=host -p 5000:5000 lru_cache_backend**
-
-### Run Backend End
-
-# ----------------------------------------------
+step 1 : **docker build -t lru_cache_backend .**\
+step 2 :  **docker run --pid=host -p 5000:5000 lru_cache_backend**\
 
 ## Run Frontend
 
 step 1 : **cd lru_cache_frontend**
 
-### First way in dev env
+### using Node local server
 
-step 2 : **npm i**
-step 3 : **npm run dev**
-
-### First end
-
-### secound way using docker
-
-step 2: **docker build -t lru_frontend .**
-step 3 : **docker run -p 3000:3000 lru_frontend**
-
-### docker end
+step 1 : **npm i**\
+step 2 : **npm run dev**\
 
 
+### using docker
 
+step 1: **docker build -t lru_frontend .**\
+step 2 : **docker run -p 3000:3000 lru_frontend**\
 
-### to access the frontend
+# To access the frontend
 
 <http://localhost:3000/>
 
-### to access the backend
+# To access the backend
 
 <http://localhost:5000/>
