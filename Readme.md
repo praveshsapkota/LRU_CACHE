@@ -1,8 +1,17 @@
 LRU (least recently used) cache
 
-had issue with compose file for running go backend so pls follow the below guide for installation and running the program
+had issue with docker compose file for running go backend so pls follow the below guide for installation and running the program
 
-step1 : cd lru_cache
+Set input {
+    key : number ,
+    value : number
+}
+
+get input {
+    key : number
+}
+
+step1 : cd LRU_CACHE
 
 Run Backend start
 step 2 : cd lru_cache_backend
@@ -19,7 +28,7 @@ step 6 : go run main.go
 
 <!-- Run in docker -->
 step 7 : docker build -t lru_cache_backend .
-step 8 :  docker run --pid=host -p 5000:5000 lru_cache_backend 
+step 8 :  docker run --pid=host -p 5000:5000 lru_cache_backend
 
 <!-- Run Backend End-->
 
@@ -30,19 +39,17 @@ step 8 :  docker run --pid=host -p 5000:5000 lru_cache_backend
 step 1 : cd lru_cache_frontend
 
 <!-- First way in dev env -->
-step 2 : npm i 
+step 2 : npm i
 step 3 : npm run dev
 <!--  -->
 
-<!-- secound way -->
+<!-- secound way using docker -->
 step 2: docker build -t lru_frontend .
 step 3 : docker run -p 3000:3000 lru_frontend
 <!--  -->
 
-
-
 to access the frontend
-http://localhost:3000/
+<http://localhost:3000/>
 
 to access the backend
-http://localhost:5000/
+<http://localhost:5000/>
