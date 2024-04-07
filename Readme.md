@@ -47,7 +47,7 @@ step 2 : **"npm run dev"**
 ### using docker
 
 step 1: **"docker build -t lru_frontend ."**\
-step 2 : **"docker run -p 3000:3000 lru_frontend"**\
+step 2 : **"docker run -p 3000:3000 lru_frontend"**
 
 # To access the frontend
 
